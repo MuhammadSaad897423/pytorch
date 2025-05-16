@@ -8,7 +8,7 @@ DIFF_TOOL=meld
 # Allows this script to be invoked from any directory:
 cd $(dirname "$0")
 
-pushd ..
+pushd ../
 
 
 $DIFF_TOOL $YAML_FILENAME <(./codegen_validation/normalize_yaml_fragment.py < $YAML_FILENAME)
